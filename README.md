@@ -10,7 +10,7 @@ Use Swift Package Manager
 
 ```bash
 File ▸ Swift Packages ▸ Add Package Dependency
-Copy https://github.com/Desquared/Greek-vocative-name-iOS and paste into the combined search/input box:
+Copy https://github.com/Desquared/Greek-vocative-name-iOS and paste into the combined search/input box.
 ```
 ## Usage
 
