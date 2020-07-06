@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		4ABA450E24B341F2006D4EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA450D24B341F2006D4EB5 /* Assets.xcassets */; };
 		4ABA451124B341F2006D4EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA450F24B341F2006D4EB5 /* LaunchScreen.storyboard */; };
 		4ABA451C24B341F2006D4EB5 /* VocativeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA451B24B341F2006D4EB5 /* VocativeExampleTests.swift */; };
+		4ABA453124B3461B006D4EB5 /* VocativeNames in Frameworks */ = {isa = PBXBuildFile; productRef = 4ABA453024B3461B006D4EB5 /* VocativeNames */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABA453124B3461B006D4EB5 /* VocativeNames in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +66,7 @@
 				4ABA450324B341F1006D4EB5 /* VocativeExample */,
 				4ABA451A24B341F2006D4EB5 /* VocativeExampleTests */,
 				4ABA450224B341F1006D4EB5 /* Products */,
+				4ABA452F24B3461B006D4EB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +102,13 @@
 			path = VocativeExampleTests;
 			sourceTree = "<group>";
 		};
+		4ABA452F24B3461B006D4EB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +125,9 @@
 			dependencies = (
 			);
 			name = VocativeExample;
+			packageProductDependencies = (
+				4ABA453024B3461B006D4EB5 /* VocativeNames */,
+			);
 			productName = VocativeExample;
 			productReference = 4ABA450124B341F1006D4EB5 /* VocativeExample.app */;
 			productType = "com.apple.product-type.application";
@@ -469,6 +482,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ABA453024B3461B006D4EB5 /* VocativeNames */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VocativeNames;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4ABA44F924B341F1006D4EB5 /* Project object */;
 }

@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import VocativeNames
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameInput: UITextField!
+    
+    @IBAction func onClick(_ sender: Any) {
+        nameLabel.text = "Γεια σου " + VocativeUtils.getVocativeName(nameInput.text!)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
