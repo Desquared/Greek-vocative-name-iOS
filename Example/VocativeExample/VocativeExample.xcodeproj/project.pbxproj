@@ -15,6 +15,7 @@
 		4ABA451124B341F2006D4EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA450F24B341F2006D4EB5 /* LaunchScreen.storyboard */; };
 		4ABA451C24B341F2006D4EB5 /* VocativeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA451B24B341F2006D4EB5 /* VocativeExampleTests.swift */; };
 		4ABA453124B3461B006D4EB5 /* VocativeNames in Frameworks */ = {isa = PBXBuildFile; productRef = 4ABA453024B3461B006D4EB5 /* VocativeNames */; };
+		4ABA453924B35DF0006D4EB5 /* VocativeNames in Frameworks */ = {isa = PBXBuildFile; productRef = 4ABA453824B35DF0006D4EB5 /* VocativeNames */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABA453924B35DF0006D4EB5 /* VocativeNames in Frameworks */,
 				4ABA453124B3461B006D4EB5 /* VocativeNames in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +129,7 @@
 			name = VocativeExample;
 			packageProductDependencies = (
 				4ABA453024B3461B006D4EB5 /* VocativeNames */,
+				4ABA453824B35DF0006D4EB5 /* VocativeNames */,
 			);
 			productName = VocativeExample;
 			productReference = 4ABA450124B341F1006D4EB5 /* VocativeExample.app */;
@@ -178,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 4ABA44F824B341F1006D4EB5;
+			packageReferences = (
+				4ABA453724B35DF0006D4EB5 /* XCRemoteSwiftPackageReference "Greek-vocative-name-iOS" */,
+			);
 			productRefGroup = 4ABA450224B341F1006D4EB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -483,9 +489,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4ABA453724B35DF0006D4EB5 /* XCRemoteSwiftPackageReference "Greek-vocative-name-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Desquared/Greek-vocative-name-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		4ABA453024B3461B006D4EB5 /* VocativeNames */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = VocativeNames;
+		};
+		4ABA453824B35DF0006D4EB5 /* VocativeNames */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ABA453724B35DF0006D4EB5 /* XCRemoteSwiftPackageReference "Greek-vocative-name-iOS" */;
 			productName = VocativeNames;
 		};
 /* End XCSwiftPackageProductDependency section */
