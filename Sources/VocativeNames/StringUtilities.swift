@@ -15,6 +15,24 @@ public class VocativeUtils {
 
 		var result = ""
 
+        if(name.isEmpty){
+            return ""
+        }
+        
+        //Known Exceptions
+        if (name == "Στέλιος") {
+            return "Στέλιο"
+        }
+       if (name == "Δημητρός") {
+            return "Δημητρό"
+        }
+        if (name == "Μανολιός") {
+            return "Μανολιό"
+        }
+       if (name == "Μανωλιός") {
+            return "Μανωλιό"
+        }
+        
 		if !name.isEmpty && name.count > 3 {
 
 			let lastTowChars = name.substring(with: (name.index(name.endIndex, offsetBy: -2) ..< name.endIndex))
@@ -53,7 +71,14 @@ public class VocativeUtils {
 				if intonationPoint > 0 {
 					if intonationPoint == syllablesCount || (syllablesCount - intonationPoint > 1) || isNasalWithMoreThanTwoSylabus(thirdFromEnd, syllablesCount: syllablesCount) {
 						//το ος γίνεται ε
-						result = name.substring(with: (name.startIndex ..< name.index(name.endIndex, offsetBy: -2))) + "ε"
+                        
+                        if(preLastChar == "ό"){
+                            result = name.substring(with: (name.startIndex ..< name.index(name.endIndex, offsetBy: -2))) + "έ"
+                        } else {
+                            result = name.substring(with: (name.startIndex ..< name.index(name.endIndex, offsetBy: -2))) + "ε"
+                        }
+                        
+                        
 					} else {
 						//το ος γίνεται ο
 						result = name.substring(with: (name.startIndex ..< name.index(name.endIndex, offsetBy: -2))) + "ο"
