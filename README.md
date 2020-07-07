@@ -4,9 +4,9 @@ Greek vocative name for iOS is a Swift Package for transforming Greek name to it
 
 ## Requirements
 
-⋅⋅* iOS 10.0+
-⋅⋅* Xcode 11+
-⋅⋅* Swift 5.0+
+* iOS 10.0+
+* Xcode 11+
+* Swift 5.0+
 
 ## Installation
 
