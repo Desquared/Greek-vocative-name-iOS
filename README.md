@@ -2,6 +2,12 @@
 
 Greek vocative name for iOS is a Swift Package for transforming Greek name to its vocative case/form. It has no effect on English or other languages.
 
+## Requirements
+
+⋅⋅* iOS 10.0+
+⋅⋅* Xcode 11+
+⋅⋅* Swift 5.0+
+
 ## Installation
 
 Use Swift Package Manager
